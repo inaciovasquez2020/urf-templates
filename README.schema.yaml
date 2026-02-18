@@ -1,0 +1,58 @@
+urf_readme_template_v1_0:
+  kind: urf_readme_spec
+  version: "1.0"
+  purpose: "Cover page + review contract for URF manuscripts"
+  required: true
+
+  manuscript_identity:
+    title: { required: true, type: string }
+    manuscript_id: { required: true, pattern: "^URF-P-[0-9]{4}$" }
+    author: { required: true, fixed: "Inacio F. Vasquez" }
+    status:
+      required: true
+      enum: ["DRAFT", "FROZEN", "OPEN_REVIEW", "ACCEPTED", "ARCHIVED"]
+    version_tag: { required: true, type: string }
+    doi: { required: false, type: string }
+
+  canonical_artifacts:
+    required_files:
+      - manuscript.tex
+      - manuscript.pdf
+      - STATUS.md
+      - CITATION.cff
+
+  verification:
+    sha256_pdf: { required: true, type: string }
+
+  scope_of_review:
+    included:
+      - mathematical_correctness
+      - logical_coherence
+      - definition_adequacy
+      - dependency_clarity
+      - conditional_vs_unconditional_claims
+    excluded:
+      - empirical_benchmarking
+      - performance_comparisons
+      - sociological_impact
+      - speculative_claims
+
+  review_process:
+    venue: { fixed: "URF Open Review Ledger" }
+    review_issue_url: { required: true, type: url }
+    feedback_classification:
+      allowed:
+        ERROR: "Demonstrable logical or mathematical error"
+        MISSING_ASSUMPTION: "Unstated but required hypothesis"
+        CLARIFICATION: "Ambiguity or presentation issue"
+        NON_BLOCKING_SUGGESTION: "Optional improvement"
+
+  claims_policy:
+    conditional_labeling: true
+    empirical_claims: false
+
+  citation:
+    allowed: ["DOI", "CITATION.cff"]
+
+  compliance:
+    blocks_open_review_if_missing: true
