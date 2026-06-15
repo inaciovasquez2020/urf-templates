@@ -1,0 +1,17 @@
+{
+  "title": "URF Templates: Canonical 10-Minute Outsider Demo",
+  "creators": [
+    {
+      "name": "Vasquez, Inacio"
+    }
+  ],
+  "description": "Reusable URF adoption templates and a canonical 10-minute outsider demo for bounded scientific claim verification.",
+  "license": "MIT",
+  "keywords": [
+    "reproducibility",
+    "verification",
+    "scientific-claims",
+    "bounded-claims",
+    "research-infrastructure"
+  ]
+}

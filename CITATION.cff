@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this repository, cite it using the metadata from this file."
+title: "URF Templates: Canonical 10-Minute Outsider Demo"
+authors:
+  - family-names: "Vasquez"
+    given-names: "Inacio"
+repository-code: "https://github.com/inaciovasquez2020/urf-templates"
+type: software
+license: MIT
+abstract: "Reusable URF adoption templates and a canonical 10-minute outsider demo for bounded scientific claim verification."
+keywords:
+  - reproducibility
+  - verification
+  - scientific-claims
+  - bounded-claims
+  - research-infrastructure
