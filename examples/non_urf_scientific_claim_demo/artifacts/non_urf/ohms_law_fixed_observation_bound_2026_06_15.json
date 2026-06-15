@@ -1,0 +1,30 @@
+{
+  "artifact_id": "NON_URF_OHMS_LAW_FIXED_OBSERVATION_BOUND_2026_06_15",
+  "artifact_type": "bounded_scientific_claim_demo",
+  "domain": "introductory_electric_circuits",
+  "non_urf_scientific_claim": "A simple resistor behaves approximately linearly under Ohm's law in a small fixed observation set.",
+  "bounded_claim": "For the listed fixed observations only, every inferred resistance value V/I lies within 0.5 percent of the declared 1000 ohm nominal resistance.",
+  "nominal_resistance_ohm": 1000.0,
+  "relative_tolerance": 0.005,
+  "observations": [
+    {"voltage_v": 1.0, "current_a": 0.001000},
+    {"voltage_v": 2.0, "current_a": 0.002004},
+    {"voltage_v": 3.0, "current_a": 0.002991},
+    {"voltage_v": 4.0, "current_a": 0.004008},
+    {"voltage_v": 5.0, "current_a": 0.004990}
+  ],
+  "required_checks": [
+    "schema_fields_present",
+    "currents_are_positive",
+    "each_inferred_resistance_within_relative_tolerance",
+    "non_claim_boundary_present"
+  ],
+  "non_claim_boundary": [
+    "Does not claim universal Ohm's law.",
+    "Does not validate any physical instrument.",
+    "Does not establish material linearity outside the listed observations.",
+    "Does not infer causation from the fixed dataset.",
+    "Does not extend beyond the declared nominal resistance and tolerance check."
+  ],
+  "copy_sentence": "Copy this pattern for your own claim."
+}
