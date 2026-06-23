@@ -10,6 +10,22 @@ A simple resistor behaves approximately linearly under Ohm's law in a small fixe
 
 For the included fixed observations, every inferred resistance value `V/I` lies within `0.5%` of the declared `1000 ohm` nominal resistance.
 
+## WHAT_THIS_DOES
+
+This demo packages one fixed Ohm's-law observation surface as a bounded, reproducible verification artifact. It checks only the included finite observations, the declared nominal resistance, the declared tolerance, and the explicit non-claim boundary recorded in the artifact.
+
+It is intended as a small outsider-runnable example of claim-boundary packaging: a scientific statement, a fixed dataset, a verifier, expected pass/fail output, and a clear boundary around what is not being claimed.
+
+## WHAT_THIS_DOES_NOT_CLAIM
+
+This demo does not claim discovery or novelty of Ohm's Law.
+
+It does not prove universal Ohm's Law.
+
+It does not validate a physical instrument, establish material linearity outside the listed observations, or infer causation from the fixed dataset.
+
+It does not validate the broader URF research program and does not constitute peer review or scientific certification.
+
 ## Run
 
 ```bash
