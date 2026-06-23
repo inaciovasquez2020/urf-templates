@@ -8,6 +8,8 @@ Reusable URF adoption templates and outsider demos
 
 ## Five-minute verification path
 
+Clean-clone confirmation: [Clean-clone adoption confirmation](examples/non_urf_scientific_claim_demo/docs/CLEAN_CLONE_ADOPTION_CONFIRMATION_2026_06_23.md).
+
 This repository contains a small, stranger-runnable example of a
 verifier-backed publication workflow.
 
