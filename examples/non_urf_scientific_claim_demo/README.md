@@ -26,6 +26,8 @@ It does not validate a physical instrument, establish material linearity outside
 
 It does not validate the broader URF research program and does not constitute peer review or scientific certification.
 
+See also: [Adoption / Validation Boundary](ADOPTION_VALIDATION_BOUNDARY.md).
+
 ## Run
 
 ```bash
