@@ -1,0 +1,18 @@
+name: non-urf-scientific-claim-demo
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verify Ohm's Law fixed observation bound
+        run: python3 examples/non_urf_scientific_claim_demo/tools/verify_ohms_law_fixed_observation_bound.py
+      - name: Run targeted test
+        run: python3 -m pytest examples/non_urf_scientific_claim_demo/tests/test_ohms_law_fixed_observation_bound.py
