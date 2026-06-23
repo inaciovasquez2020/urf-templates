@@ -4,7 +4,7 @@ This demo shows one non-URF scientific claim converted into a bounded, reproduci
 
 ## Claim
 
-A simple resistor behaves approximately linearly under Ohm's law in a small fixed observation set.
+For the included fixed observations, every inferred `V/I` lies within `0.5%` of the declared `1000 ohm` nominal resistance.
 
 ## Bounded claim
 
