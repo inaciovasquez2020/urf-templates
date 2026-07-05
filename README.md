@@ -17,7 +17,7 @@ The strongest current entry point is the non-URF scientific claim demo:
 ```sh
 cd examples/non_urf_scientific_claim_demo
 python3 tools/verify_ohms_law_fixed_observation_bound.py
-python3 -m pytest tests/test_ohms_law_fixed_observation_bound.py
+python3 -m pytest tests/test_ohms_law_fixed_observation_bound.py -q
 ```
 
 Expected verifier result:
